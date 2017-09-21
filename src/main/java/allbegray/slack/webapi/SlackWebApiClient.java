@@ -20,6 +20,7 @@ import allbegray.slack.webapi.api.StarsApi;
 import allbegray.slack.webapi.api.TeamApi;
 import allbegray.slack.webapi.api.UserGroupsApi;
 import allbegray.slack.webapi.api.UsersApi;
+import com.fasterxml.jackson.databind.JsonNode;
 
 public interface SlackWebApiClient extends
     ChannelsApi,
@@ -50,6 +51,6 @@ public interface SlackWebApiClient extends
 
     Map<String, String> getEmojiList();
 
-    OAuthAccessToken accessOAuth(String client_id, String client_secret, String code, String redirect_uri);
+    JsonNode accessOAuth(String client_id, String client_secret, String code, String redirect_uri);
 
 }

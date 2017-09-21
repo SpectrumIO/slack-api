@@ -18,13 +18,15 @@ public class BotsTest {
 
     @Before
     public void setup() {
-        webApiClient = SlackClientFactory.createWebApiClient(token);
+        //webApiClient = SlackClientFactory.createWebApiClient(token);
     }
 
     @Test
     public void infoTest() {
+        /*
         Bot bot = webApiClient.getBotInfo("B1GGB3U5R");
         System.out.println(bot);
+        */
     }
 
 }

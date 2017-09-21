@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 @JsonInclude(JsonInclude.Include.NON_EMPTY)
 public class Action {
 
-    enum Style {
+    public enum Style {
         _default, primary, danger;
     }
 

@@ -679,12 +679,12 @@ public class SlackWebApiClientImpl implements SlackWebApiClient {
 	// oauth
 
 	@Override
-	public OAuthAccessToken accessOAuth(String client_id, String client_secret, String code, String redirect_uri) {
+	public JsonNode accessOAuth(String client_id, String client_secret, String code, String redirect_uri) {
 		OAuthAccessMethod method = new OAuthAccessMethod(client_id, client_secret, code);
 		method.setRedirect_uri(redirect_uri);
 
 		JsonNode retNode = call(method);
-		return readValue(retNode, null, OAuthAccessToken.class);
+		return retNode;
 	}
 
 	// pins

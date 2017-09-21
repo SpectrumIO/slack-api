@@ -15,12 +15,12 @@ public class ChatMeMessageMethodTest {
 
     @Before
     public void setup() {
-        webApiClient = SlackClientFactory.createWebApiClient(token);
+        //webApiClient = SlackClientFactory.createWebApiClient(token);
     }
 
     @Test
     public void infoTest() {
-        webApiClient.meMessage("C07GVMHCH", "test");
+        //webApiClient.meMessage("C07GVMHCH", "test");
     }
 
 }
