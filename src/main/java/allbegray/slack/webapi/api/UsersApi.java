@@ -4,6 +4,7 @@ import java.util.List;
 
 import allbegray.slack.type.Presence;
 import allbegray.slack.type.User;
+import allbegray.slack.type.UserIdentity;
 import allbegray.slack.type.UserPresence;
 
 public interface UsersApi {
@@ -20,4 +21,5 @@ public interface UsersApi {
 
     boolean setPresenceUser(Presence presence);
 
+    UserIdentity getUserIdentity();
 }
