@@ -183,4 +183,7 @@ public interface SlackWebApiConstants {
 	String USERS_PROFILE_GET = "users.profile.get";
 	String USERS_PROFILE_SET = "users.profile.set";
 
+	// users.identity
+
+	String USERS_IDENTITY_GET = "users.identity";
 }

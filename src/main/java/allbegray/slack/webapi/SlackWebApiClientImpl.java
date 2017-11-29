@@ -1188,6 +1188,12 @@ public class SlackWebApiClientImpl implements SlackWebApiClient {
 		return isOk(new UserSetPresenceMethod(presence.name().toLowerCase()));
 	}
 
+	@Override
+	public UserIdentity getUserIdentity() {
+		JsonNode retNode = call(new UserIdentityMethod());
+		return readValue(retNode, "user", new TypeReference<UserIdentity>() {});
+	}
+
 	// function
 
 	protected boolean isOk(SlackMethod method) {
